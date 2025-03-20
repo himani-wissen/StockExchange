@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS stocks (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    quantity INTEGER NOT NULL,
+    min_price DECIMAL(10, 2) NOT NULL,
+    max_price DECIMAL(10, 2) NOT NULL,
+    current_price DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
